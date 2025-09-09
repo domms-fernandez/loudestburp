@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <head>
   <style>
+    body {
+      overflow: hidden;
+    }
+    
     * {
+      padding: 0;
+      margin: 0;
       width: 100%;
       height: 100%;
+    }
+
+    button {
+      width: 5px;
+      height: 5px;
     }
   </style>
 </head>
 <body>
+  <button onclick="document.getElementByType('button').style='display: block'">
+    ???
+  </button>
   <iframe
+    style="display: none"
     src="https://www.youtube.com/embed/So-wPXzVOx4?t=85"
     title="Longest &amp; Loudest Burp Video EVER Created!"
     frameborder="0"
